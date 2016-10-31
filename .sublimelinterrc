@@ -1,0 +1,12 @@
+{
+  "linters": {
+    "tslint": {
+      "@disable": false,
+      "args": [],
+      "excludes": [
+        "**/node_modules/**"
+      ],
+      "config_filename": "tsconfig.json"
+    }
+  }
+}

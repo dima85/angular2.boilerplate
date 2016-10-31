@@ -1,0 +1,207 @@
+{
+  "rulesDirectory": [
+    "node_modules/codelyzer",
+    "node_modules/vrsource-tslint-rules/rules",
+    "node_modules/tslint-eslint-rules/dist/rules",
+    "node_modules/tslint-microsoft-contrib"
+  ],
+  "rules": {
+    // Default rules
+
+    "class-name": true,
+    "comment-format": [
+      true,
+      "check-space"
+    ],
+    "curly": true,
+    "eofline": true,
+    "forin": true,
+    "indent": [
+      true,
+      "spaces"
+    ],
+    "label-position": true,
+    "label-undefined": true,
+    "max-line-length": [
+      true,
+      140
+    ],
+    "member-access": false,
+    "member-ordering": [
+      true,
+      "static-before-instance",
+      "variables-before-functions"
+    ],
+    "no-arg": true,
+    "no-bitwise": true,
+    "no-console": [
+      true,
+      "debug",
+      "info",
+      "time",
+      "timeEnd",
+      "trace"
+    ],
+    "no-construct": true,
+    "no-debugger": true,
+    "no-duplicate-key": true,
+    "no-duplicate-variable": true,
+    "no-empty": false,
+    "no-eval": true,
+    "no-inferrable-types": true,
+    "no-shadowed-variable": true,
+    "no-string-literal": false,
+    "no-switch-case-fall-through": true,
+    "no-trailing-whitespace": true,
+    "no-unused-expression": true,
+    "no-unused-variable": true,
+    "no-unreachable": true,
+    "no-use-before-declare": true,
+    "no-var-keyword": true,
+    "object-literal-sort-keys": false,
+    "one-line": [
+      true,
+      "check-open-brace",
+      "check-catch",
+      "check-else",
+      "check-whitespace"
+    ],
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "radix": true,
+    "semicolon": [
+      "always"
+    ],
+    "triple-equals": [
+      true,
+      "allow-null-check"
+    ],
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      }
+    ],
+    "variable-name": false,
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-separator",
+      "check-type"
+    ],
+    "one-variable-per-declaration": true,
+
+    //codelyzer rules
+
+    "directive-selector-name": [true, "camelCase"],
+    "component-selector-name": [true, "kebab-case"],
+    "directive-selector-type": [true, "attribute"],
+    "component-selector-type": [true, "element"],
+    "directive-selector-prefix": [true, "of-"],
+    "component-selector-prefix": [true, "of-"],
+    "use-input-property-decorator": true,
+    "use-output-property-decorator": true,
+    "use-host-property-decorator": true,
+    "no-attribute-parameter-decorator": true,
+    "no-input-rename": true,
+    "no-output-rename": true,
+    "no-forward-ref": true,
+    "use-life-cycle-interface": true,
+    "use-pipe-transform-interface": true,
+    "pipe-naming": [true, "camelCase", "of-"],
+    "component-class-suffix": true,
+    "directive-class-suffix": true,
+    "import-destructuring-spacing": true,
+    "templates-use-public": true,
+    "no-access-missing-member": true,
+    "invoke-injectable": true,
+
+    // vrsource rules
+
+    "conditional-expression-parens": true,
+    "dot-notation": [
+      true,
+      { "allow-pattern": "^[a-z]+(_[a-z]+)+$" }
+    ],
+    "ext-variable-name": [
+      true,
+      ["class",                 "pascal"],
+      ["interface",             "pascal", {"regex": "^I.*$"}],
+      ["parameter",             "camel"],
+      ["property", "static",    "camel", {"regex": "^s.*$"}],
+      ["property", "private",   "camel", "allow-leading-underscore"],
+      ["property", "protected", "camel", "allow-leading-underscore"],
+      ["variable", "local",     "camel"],
+      ["variable", "const",     "upper"],
+      ["variable",              "camel", {"regex": "^g.*$"}],
+      ["method", "private",     "camel", "allow-leading-underscore"],
+      ["method", "protected",   "camel", "allow-leading-underscore"],
+      ["function",              "camel"],
+      ["default",               "camel"]
+    ],
+    "literal-spacing": [
+      true,
+      {
+        "array": ["always"],
+        "object": ["never"],
+        "import": ["always"]
+      }
+    ],
+    "max-params": [
+      true,
+      3
+    ],
+    "multiline-arrow": [
+      true,
+      "require-parens",
+      "require-block"
+    ],
+    "no-duplicate-imports": true,
+    "no-param-reassign": true,
+    "no-jasmine-focus": true,
+    "prefer-case-blocks": true,
+    "prefer-const": true,
+    "prefer-literal": [
+      true,
+      "object",
+      "function",
+      "array"
+    ],
+
+    // ESLint for TS rules
+
+    // Microsoft TSLint rules
+    "max-func-body-length":  [
+      true,
+      {
+        "func-body-length": 10 ,
+        "func-expression-body-length": 10 ,
+        "arrow-body-length": 5,
+        "method-body-length": 15,
+        "ctor-body-length": 5,
+        "ignore-comments": true,
+        "ignore-parameters-to-function-regex": "describe|beforeEach|it|async"
+      }
+    ],
+    "no-duplicate-case": true,
+    "no-function-expression": true,
+    // "no-relative-imports": true,
+    "no-suspicious-comment": true,
+    "no-unnecessary-bind": true,
+    "no-unnecessary-field-initialization": true,
+    "no-unnecessary-override": true,
+    "no-unnecessary-semicolons": true,
+    "no-var-self": true,
+    "promise-must-complete": true,
+    "prefer-array-literal": true
+
+  }
+}
