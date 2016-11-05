@@ -1,4 +1,4 @@
-# Veritrova web client project
+# Angular2 boilerplate project
 
 ## For frontend development following stack has been used:
 - [ES6 + typescript](https://www.typescriptlang.org/) as language and ES6 transpiler
